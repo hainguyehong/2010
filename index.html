@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chúc Mẹ Hồng 20/10</title>
     <style>
         body {
   height: 100%;
@@ -541,10 +541,15 @@
 
     </style>
 </head>
-<audio autoplay loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
-
+<audio id="bg-music" src="music.mp3" loop muted playsinline></audio>
+<script>
+  // Khi người dùng nhấp chuột hoặc chạm vào trang, bật nhạc
+  document.addEventListener("click", function() {
+    const audio = document.getElementById("bg-music");
+    audio.muted = false; 
+    audio.play();
+  });
+</script>
 <body>
 <div class="container">
 
@@ -565,7 +570,7 @@
     </div>
 
   </div>
-  <div class="roseText">Chúc em 20-10 luôn vui vẻ xinh đẹp nha ❤️</div>
+  <div class="roseText">Hãy nhấn vào ❤️ nha mẹ Hồng </div>
 
   <div class="thorns">
     <div></div>
