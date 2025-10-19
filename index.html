@@ -392,7 +392,7 @@
 .roseText {
   width: max-content;
   position: absolute;
-  top: 290px;
+  top: 390px;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
@@ -508,8 +508,43 @@
     opacity: 0;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  .roseText {
+    font-size: 28px;
+    top: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    transform: translate(-50%, -50%) scale(0.55);
+  }
+  .roseText {
+    font-size: 22px;
+    top: 230px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    transform: translate(-50%, -50%) scale(0.45);
+  }
+  .roseText {
+    font-size: 20px;
+    top: 210px;
+  }
+}
+
     </style>
 </head>
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 <body>
 <div class="container">
 
